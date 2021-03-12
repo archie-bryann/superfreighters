@@ -34,7 +34,7 @@ exports.payments_verify_payment = (req,res,next) => {
                 if(err) {
                     // logger.debug('Error: ' + JSON.stringify(err));
                     console.log(err)
-                    return res.status(500).json({error:'An error occured. Please try again!'});
+                    return res.status(500).json({error:'An error occured while try to send mail. Please try again!'});
                 } else {
 
                         return res.status(200).json({message:"Your order has been successfully placed."})
